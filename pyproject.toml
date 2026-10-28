@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qrrobo"
+version = "0.1.2"
+description = "Lê um QR Code pela câmera e envia a palavra a um bloco SPIKE com Pybricks."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Gerfy"}]
+license = {text = "MIT"}
+keywords = ["qrcode", "robotica", "pybricks", "spike", "educacao"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "opencv-python>=4.8",
+    "pybricksdev",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/qrrobo/"
+Repository = "https://github.com/Gerfy1/qrrobo"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["qrrobo*"]
